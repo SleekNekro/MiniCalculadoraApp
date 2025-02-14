@@ -1,0 +1,15 @@
+<h1>MiniCalculadoraApp está ejecutándose</h1>
+<h2>Calculadora</h2>
+
+<form>
+  <label>Número 1:</label><br>
+  <input type="number" [(ngModel)]="numero1" name="numero1" placeholder="Introduce el primer número" required><br><br>
+  
+  <label>Número 2:</label><br>
+  <input type="number" [(ngModel)]="numero2" name="numero2" placeholder="Introduce el segundo número" required><br><br>
+  
+  <button type="button" (click)="sumar()">Sumar</button>
+  <button type="button" (click)="restar()">Restar</button>
+</form>
+
+<h3>Resultado: {{ resultado }}</h3>

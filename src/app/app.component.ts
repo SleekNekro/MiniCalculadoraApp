@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { CalculadoraComponent } from './calculadora/calculadora.component';
+import { CommonModule } from '@angular/common';
 
 @Component({
+  standalone: true,
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  template: '<app-calculadora></app-calculadora>',
+  imports: [CommonModule, CalculadoraComponent]
 })
-export class AppComponent {
-  title = 'MiniCalculadoraApp';
-}
+export class AppComponent { }
